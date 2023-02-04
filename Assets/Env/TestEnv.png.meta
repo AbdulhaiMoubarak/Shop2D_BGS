@@ -1,0 +1,547 @@
+fileFormatVersion: 2
+guid: bb581084ddd27ec40bdd87b8b82c4c7f
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 300
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: ShopCheckout
+      rect:
+        serializedVersion: 2
+        x: 5390
+        y: 2966
+        width: 232
+        height: 516
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 890857a7386193246a678853c73b21b7
+      internalID: 1762662905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShopShoeRack
+      rect:
+        serializedVersion: 2
+        x: 5718
+        y: 3194
+        width: 740
+        height: 356
+      alignment: 9
+      pivot: {x: 0.5013065, y: 0.03533593}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f25b5b3fed71cc42b2171de42f4ebbf
+      internalID: -757810304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Roof
+      rect:
+        serializedVersion: 2
+        x: 6542
+        y: 1546
+        width: 1612
+        height: 1832
+      alignment: 9
+      pivot: {x: 0.5, y: 0.02}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be70d3503d166024787b71901de4bb7d
+      internalID: 79573470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShopRightItems
+      rect:
+        serializedVersion: 2
+        x: 5018
+        y: 2534
+        width: 124
+        height: 672
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 047f923ff1ca9d4439d6a3691eac579b
+      internalID: -1538727135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShopRoom
+      rect:
+        serializedVersion: 2
+        x: 2322
+        y: 1518
+        width: 1560
+        height: 1568
+      alignment: 9
+      pivot: {x: 0.5, y: 0.7601052}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5dc2dcfe7626185408efe8b5d1be3498
+      internalID: -1398092229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShopLeftItems
+      rect:
+        serializedVersion: 2
+        x: 4802
+        y: 2193
+        width: 72
+        height: 941
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb2a94e3d3676924eb25e5294ffc6c35
+      internalID: -1758554980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShopMidItems
+      rect:
+        serializedVersion: 2
+        x: 5230
+        y: 2531
+        width: 444
+        height: 408
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3640a77b50559046a99028a340cb688
+      internalID: -1848214060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DreeingRoom
+      rect:
+        serializedVersion: 2
+        x: 5722
+        y: 2546
+        width: 758
+        height: 604
+      alignment: 9
+      pivot: {x: 0.50836134, y: 0.030062038}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 424157aa8f4422543a373da914af0f1b
+      internalID: -1910075182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShopFront
+      rect:
+        serializedVersion: 2
+        x: 5013
+        y: 2028
+        width: 1459
+        height: 486
+      alignment: 9
+      pivot: {x: 0.50260603, y: 0.11411715}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93e6954d107883742a3ca7a822f2a9f7
+      internalID: -1767858660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plant
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 78
+        width: 560
+        height: 840
+      alignment: 9
+      pivot: {x: 0.5115768, y: 0.048515245}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c97b404f991cbe1499bcd9421e0b6b98
+      internalID: -424749015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RoadLamp
+      rect:
+        serializedVersion: 2
+        x: 654
+        y: 50
+        width: 76
+        height: 1128
+      alignment: 9
+      pivot: {x: 0.4999992, y: 0.031601824}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ecd1ce2f8008ebb4b8084fec17421bce
+      internalID: 838789880
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SaleSign
+      rect:
+        serializedVersion: 2
+        x: 838
+        y: 658
+        width: 132
+        height: 260
+      alignment: 9
+      pivot: {x: 0.6165059, y: 0.18735586}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5eb927f59a6f4524db47571e47141ec7
+      internalID: -906896219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SideWalkSmall
+      rect:
+        serializedVersion: 2
+        x: 1638
+        y: 570
+        width: 740
+        height: 244
+      alignment: 9
+      pivot: {x: 0.51220524, y: 0.9147414}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d3607dbf8b1aec418430458e66e84b2
+      internalID: 1695129346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Street
+      rect:
+        serializedVersion: 2
+        x: 2414
+        y: 42
+        width: 1472
+        height: 1420
+      alignment: 9
+      pivot: {x: 0.5, y: 0.027936215}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c62897c185237d14f8ce787041dacc06
+      internalID: 1603086859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grass
+      rect:
+        serializedVersion: 2
+        x: 3930
+        y: 38
+        width: 2324
+        height: 1828
+      alignment: 9
+      pivot: {x: 0.5037157, y: 0.6268779}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 886aa906726da0e4ea0cc416dfd534e3
+      internalID: 1257980596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Storage
+      rect:
+        serializedVersion: 2
+        x: 6640
+        y: 90
+        width: 1518
+        height: 1376
+      alignment: 9
+      pivot: {x: 0.5015404, y: 0.041121315}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc937b7094c21f843ad713218e21c63d
+      internalID: 2146996431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fence
+      rect:
+        serializedVersion: 2
+        x: 826
+        y: 274
+        width: 752
+        height: 360
+      alignment: 9
+      pivot: {x: 0.49577233, y: 0.076108634}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5bb31ddfd6430a458a11d9c8e303517
+      internalID: 726092717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SideWalk
+      rect:
+        serializedVersion: 2
+        x: 1638
+        y: 38
+        width: 744
+        height: 480
+      alignment: 9
+      pivot: {x: 0.5120036, y: 0.94682133}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60da4aac1e011e54bb0898d9604ea6d2
+      internalID: -609662978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RoadBlocker
+      rect:
+        serializedVersion: 2
+        x: 797
+        y: 43
+        width: 776
+        height: 135
+      alignment: 9
+      pivot: {x: 0.49582303, y: 0.11583201}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27ac9ac052c66a14cb23b7f79c60feff
+      internalID: 1427961050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      1  29uw5b_5: 49282638
+      ShopCheckout: 1762662905
+      SideWalk: -609662978
+      RoadBlocker: 1427961050
+      ShopRightItems: -1538727135
+      ShopShoeRack: -757810304
+      1  29uw5b_4: 1461762275
+      1  29uw5b_25: 1116273711
+      DreeingRoom: -1910075182
+      SideWalkSmall: 1695129346
+      ShopLeftItems: -1758554980
+      Grass: 1257980596
+      Storage: 2146996431
+      1  29uw5b_24: 1986076677
+      SaleSign: -906896219
+      ShopMidItems: -1848214060
+      RoadLamp: 838789880
+      Street: 1603086859
+      1  29uw5b_23: 1377246121
+      Fence: 726092717
+      Plant: -424749015
+      1  29uw5b_10: -1581286948
+      1  29uw5b_22: 144929418
+      Roof: 79573470
+      ShopRoom: -1398092229
+      ShopFront: -1767858660
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
