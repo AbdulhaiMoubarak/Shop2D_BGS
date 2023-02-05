@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 29bbb51b10657094d81490c8ec04b2ad
+guid: 8b405307590862c409285a12625ba864
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -193,7 +193,7 @@ TextureImporter:
         serializedVersion: 2
         x: 785
         y: 714
-        width: 67
+        width: 72
         height: 206
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -212,10 +212,10 @@ TextureImporter:
       name: UpperArm
       rect:
         serializedVersion: 2
-        x: 879
-        y: 705
-        width: 113
-        height: 256
+        x: 875
+        y: 691
+        width: 117
+        height: 270
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -277,8 +277,8 @@ TextureImporter:
         serializedVersion: 2
         x: 518
         y: 523
-        width: 101
-        height: 75
+        width: 97
+        height: 92
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -296,10 +296,10 @@ TextureImporter:
       name: FootSide
       rect:
         serializedVersion: 2
-        x: 646
-        y: 524
-        width: 148
-        height: 72
+        x: 647
+        y: 525
+        width: 147
+        height: 74
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -317,10 +317,10 @@ TextureImporter:
       name: FootBack
       rect:
         serializedVersion: 2
-        x: 518
+        x: 535
         y: 429
-        width: 100
-        height: 75
+        width: 80
+        height: 81
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -335,7 +335,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: IconShirt
+      name: Icon_Top
       rect:
         serializedVersion: 2
         x: 17
@@ -349,14 +349,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5db0dc3a11b414c419699d7b475731f6
-      internalID: 338466409
+      spriteID: cdc438cb4e43cd84bbb78c541b9ed573
+      internalID: 589698630
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: IconPants
+      name: Icon_Pants
       rect:
         serializedVersion: 2
         x: 278
@@ -370,14 +370,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5e3a84eae757183439fa80e7c1e7562b
-      internalID: 1000677596
+      spriteID: 54824d1c217612e45a76cf392b9ffb2e
+      internalID: -360699368
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: IconShoe
+      name: Icon_Shoe
       rect:
         serializedVersion: 2
         x: 554
@@ -391,8 +391,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 18537d34347cf884dbaf96092d9a4581
-      internalID: -661249635
+      spriteID: e9585fe5a7ca5ad44abdf31bb704051a
+      internalID: 226876595
       vertices: []
       indices: 
       edges: []
@@ -413,11 +413,11 @@ TextureImporter:
       LowerArm: 666871320
       shirtSide: -1822616243
       TorsoSide: -1638336635
+      Icon_Top: 589698630
+      Icon_Shoe: 226876595
       UpperArm: 697104855
-      IconShoe: -661249635
-      IconPants: 1000677596
-      IconShirt: 338466409
       LowerLeg: 1901065992
+      Icon_Pants: -360699368
       FootFront: -390883733
       TorsoFront: -1283456651
       FootBack: -2119025122

@@ -1360,6 +1360,7 @@ GameObject:
   - component: {fileID: 3283450729270473338}
   - component: {fileID: 3283450729270473339}
   - component: {fileID: 3283450729270473316}
+  - component: {fileID: 1620603990}
   m_Layer: 0
   m_Name: Character
   m_TagString: Player
@@ -1376,7 +1377,7 @@ Transform:
   m_GameObject: {fileID: 3283450729270473330}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.204, y: -4.782, z: 0}
-  m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 3283450730497441893}
@@ -1530,6 +1531,114 @@ SortingGroup:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!114 &1620603990
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3283450729270473330}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 06c0524a72df6cd40a05ed2e2972ffcf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  character:
+    UpperTorso:
+      front: {fileID: 3283450729965126353}
+      back: {fileID: 3283450730414183066}
+      side: {fileID: 3283450730317972362}
+    Torso:
+      front: {fileID: 3283450729142662907}
+      back: {fileID: 0}
+      side: {fileID: 3283450729532384326}
+    UpperArm:
+    - {fileID: 3283450730238402029}
+    - {fileID: 3283450729366877911}
+    - {fileID: 3283450728519576194}
+    - {fileID: 3283450730079392983}
+    Arm:
+    - {fileID: 3283450729279817803}
+    - {fileID: 3283450729790709923}
+    - {fileID: 3283450730550136076}
+    - {fileID: 3283450729925651207}
+    UpperLeg:
+    - {fileID: 3283450730365775582}
+    - {fileID: 3283450730062670180}
+    - {fileID: 3283450730287062044}
+    - {fileID: 3283450729739741658}
+    Leg:
+    - {fileID: 3283450728846110368}
+    - {fileID: 3283450729736802406}
+    - {fileID: 3283450730106945403}
+    - {fileID: 3283450728559156311}
+    LShoe:
+      front: {fileID: 3283450729818204272}
+      back: {fileID: 3283450728413726472}
+      side: {fileID: 3283450729785108972}
+    RShoe:
+      front: {fileID: 3283450729853176000}
+      back: {fileID: 3283450729171286174}
+      side: {fileID: 3283450729743147770}
+  SkinsTop:
+  - avalibleInShop: 0
+    name: Blue Shirt
+    price: 200
+    icon: {fileID: 338466409, guid: 29bbb51b10657094d81490c8ec04b2ad, type: 3}
+    UpperTorso:
+      front: {fileID: 1329310776, guid: 29bbb51b10657094d81490c8ec04b2ad, type: 3}
+      back: {fileID: 0}
+      side: {fileID: -1822616243, guid: 29bbb51b10657094d81490c8ec04b2ad, type: 3}
+    UpperArm: {fileID: 697104855, guid: 29bbb51b10657094d81490c8ec04b2ad, type: 3}
+    Arm: {fileID: 666871320, guid: 29bbb51b10657094d81490c8ec04b2ad, type: 3}
+  - avalibleInShop: 1
+    name: Yellow Shirt
+    price: 200
+    icon: {fileID: 589698630, guid: 8b405307590862c409285a12625ba864, type: 3}
+    UpperTorso:
+      front: {fileID: 1329310776, guid: 8b405307590862c409285a12625ba864, type: 3}
+      back: {fileID: 0}
+      side: {fileID: -1822616243, guid: 8b405307590862c409285a12625ba864, type: 3}
+    UpperArm: {fileID: 697104855, guid: 8b405307590862c409285a12625ba864, type: 3}
+    Arm: {fileID: 666871320, guid: 8b405307590862c409285a12625ba864, type: 3}
+  SkinsPants:
+  - avalibleInShop: 0
+    name: Brown Pants
+    price: 200
+    icon: {fileID: 1000677596, guid: 29bbb51b10657094d81490c8ec04b2ad, type: 3}
+    Torso:
+      front: {fileID: -1283456651, guid: 29bbb51b10657094d81490c8ec04b2ad, type: 3}
+      back: {fileID: 0}
+      side: {fileID: -1638336635, guid: 29bbb51b10657094d81490c8ec04b2ad, type: 3}
+    UpperLeg: {fileID: 1617224569, guid: 29bbb51b10657094d81490c8ec04b2ad, type: 3}
+    Leg: {fileID: 1901065992, guid: 29bbb51b10657094d81490c8ec04b2ad, type: 3}
+  - avalibleInShop: 1
+    name: Navy Pants
+    price: 200
+    icon: {fileID: -360699368, guid: 8b405307590862c409285a12625ba864, type: 3}
+    Torso:
+      front: {fileID: -1283456651, guid: 8b405307590862c409285a12625ba864, type: 3}
+      back: {fileID: 0}
+      side: {fileID: -1638336635, guid: 8b405307590862c409285a12625ba864, type: 3}
+    UpperLeg: {fileID: 1617224569, guid: 8b405307590862c409285a12625ba864, type: 3}
+    Leg: {fileID: 1901065992, guid: 8b405307590862c409285a12625ba864, type: 3}
+  SkinsShoes:
+  - avalibleInShop: 0
+    name: White Shoes
+    price: 200
+    icon: {fileID: -661249635, guid: 29bbb51b10657094d81490c8ec04b2ad, type: 3}
+    Shoe:
+      front: {fileID: -390883733, guid: 29bbb51b10657094d81490c8ec04b2ad, type: 3}
+      back: {fileID: -2119025122, guid: 29bbb51b10657094d81490c8ec04b2ad, type: 3}
+      side: {fileID: 1053096746, guid: 29bbb51b10657094d81490c8ec04b2ad, type: 3}
+  - avalibleInShop: 1
+    name: SkyBlue Shoes
+    price: 200
+    icon: {fileID: 226876595, guid: 8b405307590862c409285a12625ba864, type: 3}
+    Shoe:
+      front: {fileID: -390883733, guid: 8b405307590862c409285a12625ba864, type: 3}
+      back: {fileID: -2119025122, guid: 8b405307590862c409285a12625ba864, type: 3}
+      side: {fileID: 1053096746, guid: 8b405307590862c409285a12625ba864, type: 3}
 --- !u!1 &3283450729279817802
 GameObject:
   m_ObjectHideFlags: 0

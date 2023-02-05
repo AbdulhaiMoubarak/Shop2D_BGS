@@ -57,6 +57,12 @@ public class TopDownCharaController : MonoBehaviour
             transform.localScale = new Vector3(scaleSize, scaleSize, scaleSize);
             dir.x = 1;
         }
+        
+        
+        if (Input.GetKey(KeyCode.E))
+        {
+            GetComponent<CharSpirteManager>().SetSkin();
+        }
 
         dir.Normalize();
         animator.SetBool("IsMoving", dir.magnitude > 0);
