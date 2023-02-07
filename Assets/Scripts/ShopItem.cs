@@ -21,14 +21,21 @@ public class ShopItem : MonoBehaviour
     {
         if (DataManager.GetGold() >= _skin.price)
         {
-            DataManager.SubtractGold(_skin.price);
-            DataManager.AddItemToInventory(_skin.name);
+            ConfirmPoup.Get().Open("Buy this item?", _skin.PublicName, _skin.icon, delegate
+            {
 
-            Debug.Log(_skin.name);
-            DataManager.SetSkinData(_skin.name, _skin.GetSkinType());
-            CharSpirteManager.Get().UpdateSkin();
+                DataManager.SubtractGold(_skin.price);
+                DataManager.AddItemToInventory(_skin.name);
 
-            ShopPopup.Get().UpdateData();
+                Debug.Log(_skin.name);
+                DataManager.SetSkinData(_skin.name, _skin.GetSkinType());
+
+                CharSpirteManager.Get().UpdateSkin();
+                ShopPopup.Get().UpdateData();
+            }, delegate
+            {
+                ShopPopup.Get().UpdateData();
+            });
         }
     }
 }

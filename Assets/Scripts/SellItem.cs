@@ -19,13 +19,19 @@ public class SellItem : MonoBehaviour
     }
     public void OnClick()
     {
-        DataManager.AddGold((int)(_skin.price * .5));
-        DataManager.RemoveItemFromInventory(_skin.name);
+        ConfirmPoup.Get().Open("Sell this item?", _skin.PublicName, _skin.icon, delegate
+        {
+            DataManager.AddGold((int)(_skin.price * .5));
+            DataManager.RemoveItemFromInventory(_skin.name);
 
-        Debug.Log(_skin.name);
-        DataManager.SetDefaultSkinData(_skin.GetSkinType());
-        CharSpirteManager.Get().UpdateSkin();
+            Debug.Log(_skin.name);
+            DataManager.SetDefaultSkinData(_skin.GetSkinType());
+            CharSpirteManager.Get().UpdateSkin();
 
-        ShopPopup.Get().UpdateData();
+            ShopPopup.Get().UpdateData();
+        }, delegate
+        {
+            ShopPopup.Get().UpdateData();
+        });
     }
 }
