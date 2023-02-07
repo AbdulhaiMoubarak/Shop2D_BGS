@@ -7,19 +7,38 @@ public class CharSpirteManager : MonoBehaviour
 
 
     [SerializeField] CharacterSprites character;
-    [SerializeField] List<CharacterSkinTop> SkinsTop;
-    [SerializeField] List<CharacterSkinPants> SkinsPants;
-    [SerializeField] List<CharacterSkinShoe> SkinsShoes;
+    public List<CharacterSkinTop> SkinsTop;
+    public List<CharacterSkinPants> SkinsPants;
+    public List<CharacterSkinShoe> SkinsShoes;
 
+    private static CharSpirteManager _instance;
 
-    public void SetSkin()
+    public static CharSpirteManager Get()
     {
-        SetTopSkin(Random.Range(0, SkinsTop.Count));
-        SetPantsSkin(Random.Range(0, SkinsPants.Count));
-        SetShoesSkin(Random.Range(0, SkinsShoes.Count));
+        return _instance;
     }
+
+    private void Start()
+    {
+        _instance = this;
+        UpdateSkin();
+    }
+
+    public void UpdateSkin()
+    {
+        SetTopSkin(DataManager.GetSkinData(SkinType.Top));
+        SetPantsSkin(DataManager.GetSkinData(SkinType.Pants));
+        SetShoesSkin(DataManager.GetSkinData(SkinType.Shoes));
+    }
+
     void SetTopSkin(int index)
     {
+        if (index < 0 || index > (SkinsTop.Count - 1))
+        {
+            return;
+        }
+
+
         if (SkinsTop[index].UpperTorso.front != null)
             character.UpperTorso.front.sprite = SkinsTop[index].UpperTorso.front;
 
@@ -48,6 +67,11 @@ public class CharSpirteManager : MonoBehaviour
     }
     void SetPantsSkin(int index)
     {
+        if (index < 0 || index > (SkinsPants.Count - 1))
+        {
+            return;
+        }
+
         if (SkinsPants[index].Torso.front != null)
             character.Torso.front.sprite = SkinsPants[index].Torso.front;
         if (SkinsPants[index].Torso.back != null)
@@ -70,7 +94,10 @@ public class CharSpirteManager : MonoBehaviour
     }
     void SetShoesSkin(int index)
     {
-        //public SpriteAllSides Shoe;
+        if (index < 0 || index > (SkinsShoes.Count - 1))
+        {
+            return;
+        }
 
         if (SkinsShoes[index].Shoe.front != null)
         {
@@ -111,38 +138,62 @@ public class CharacterSprites
     public SpriteRenderAllSides RShoe;
 }
 
-[System.Serializable]
-public class CharacterSkinTop
+
+public class CharacterSkin
 {
     public bool avalibleInShop = true;
+    public int SkinID;
     public string name;
     public int price;
     public Sprite icon;
+
+    public virtual SkinType GetSkinType()
+    {
+        return SkinType.Top;
+    }
+}
+
+public enum SkinType
+{
+    Top,
+    Pants,
+    Shoes
+}
+
+[System.Serializable]
+public class CharacterSkinTop : CharacterSkin
+{
     public SpriteAllSides UpperTorso;
     public Sprite UpperArm;
     public Sprite Arm;
+
+    public override SkinType GetSkinType()
+    {
+        return SkinType.Top;
+    }
+
 }
 
 [System.Serializable]
-public class CharacterSkinPants
+public class CharacterSkinPants : CharacterSkin
 {
-    public bool avalibleInShop = true;
-    public string name;
-    public int price;
-    public Sprite icon;
     public SpriteAllSides Torso;
     public Sprite UpperLeg;
     public Sprite Leg;
+    public override SkinType GetSkinType()
+    {
+        return SkinType.Pants;
+    }
 }
 
 [System.Serializable]
-public class CharacterSkinShoe
+public class CharacterSkinShoe : CharacterSkin
 {
-    public bool avalibleInShop = true;
-    public string name;
-    public int price;
-    public Sprite icon;
     public SpriteAllSides Shoe;
+    public override SkinType GetSkinType()
+    {
+        return SkinType.Shoes;
+    }
 }
 
 

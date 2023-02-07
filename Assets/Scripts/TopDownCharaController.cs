@@ -9,6 +9,8 @@ public class TopDownCharaController : MonoBehaviour
 
     private Animator animator;
 
+    [SerializeField] LayerMask _interactableMask;
+
     private void Start()
     {
         animator = GetComponent<Animator>();
@@ -57,11 +59,16 @@ public class TopDownCharaController : MonoBehaviour
             transform.localScale = new Vector3(scaleSize, scaleSize, scaleSize);
             dir.x = 1;
         }
-        
-        
+
+
         if (Input.GetKey(KeyCode.E))
         {
-            GetComponent<CharSpirteManager>().SetSkin();
+            Collider2D[] collider2Ds = new Collider2D[3];
+            int _numFound = Physics2D.OverlapCircleNonAlloc(transform.position, .5f, collider2Ds, _interactableMask);
+            if (_numFound > 0)
+            {
+                collider2Ds[0].GetComponent<IInteractable>().Interact();
+            }
         }
 
         dir.Normalize();

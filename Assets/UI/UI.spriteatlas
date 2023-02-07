@@ -43,6 +43,7 @@ SpriteAtlas:
   - {fileID: 21300000, guid: 74f57f44ee2897c47989332c3a622129, type: 3}
   - {fileID: 21300000, guid: 6257ebb4b341e1d4f92ec17d8832888c, type: 3}
   - {fileID: 21300000, guid: 96f9bec5756de4243a0e05027249e28a, type: 3}
+  - {fileID: 21300000, guid: 259223c81f21b4b41b416468e043751f, type: 3}
   - {fileID: 21300000, guid: fe2e856cb31ac2543ab2f93edbb27291, type: 3}
   - {fileID: 21300000, guid: 4f9791fcca60ece4e85245c1e44c4f97, type: 3}
   - {fileID: 21300000, guid: c382e94f7f6dfec4eb11dac56d5ee839, type: 3}
@@ -53,6 +54,7 @@ SpriteAtlas:
   - roundedCorFade
   - Label
   - ListFrame09_White
+  - Icon_Inv
   - ButtonSmall
   - roundedCor
   - Icon_Check
