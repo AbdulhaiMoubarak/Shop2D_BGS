@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class ShopPopup : MonoBehaviour
 {
@@ -8,8 +9,17 @@ public class ShopPopup : MonoBehaviour
     [SerializeField] GameObject bg;
     [SerializeField] Transform content;
     [SerializeField] GameObject pf_ShopItem;
+    [SerializeField] GameObject pf_SellItem;
+
+    [SerializeField] Image buyBg;
+    [SerializeField] Image sellBg;
+
+    
+    [SerializeField] Color selectedColor;
+    [SerializeField] Color unselectedColor;
 
 
+    bool isSell;
 
     private static ShopPopup _instance;
 
@@ -25,9 +35,10 @@ public class ShopPopup : MonoBehaviour
 
     public void Open()
     {
+        if (popup.activeInHierarchy) return;
         popup.SetActive(true);
         bg.SetActive(true);
-        UpdateData();
+        SwitchToBuy();
     }
 
     public void Close()
@@ -36,6 +47,25 @@ public class ShopPopup : MonoBehaviour
         bg.SetActive(false);
     }
 
+    public void SwitchToSell()
+    {
+        isSell = true;
+        buyBg.color = unselectedColor;
+        sellBg.color = selectedColor;
+        sellBg.transform.SetAsLastSibling();
+
+        UpdateData();
+    }
+
+    public void SwitchToBuy()
+    {
+        isSell = false;
+        buyBg.color = selectedColor;
+        sellBg.color = unselectedColor;
+        buyBg.transform.SetAsLastSibling();
+        
+        UpdateData();
+    }
 
     public void UpdateData()
     {
@@ -44,13 +74,34 @@ public class ShopPopup : MonoBehaviour
             Destroy(content.GetChild(i).gameObject);
         }
 
-        foreach (var item in CharSpirteManager.Get().Skins)
+        if (!isSell)
         {
-            if (item.price > 0)
+            foreach (var item in SkinManager.Get().Skins)
             {
-                var NewItem = Instantiate(pf_ShopItem, content);
-                NewItem.GetComponent<ShopItem>().SetData(item);
+                if (item.price > 0)
+                {
+                    if (!DataManager.HasItemInInventory(item.name))
+                    {
+                        var NewItem = Instantiate(pf_ShopItem, content);
+                        NewItem.GetComponent<ShopItem>().SetData(item);
+                    }
+                }
             }
         }
+        else
+        {
+            foreach (var item in SkinManager.Get().Skins)
+            {
+                if (item.price > 0)
+                {
+                    if (DataManager.HasItemInInventory(item.name))
+                    {
+                        var NewItem = Instantiate(pf_SellItem, content);
+                        NewItem.GetComponent<SellItem>().SetData(item);
+                    }
+                }
+            }
+        }
+
     }
 }

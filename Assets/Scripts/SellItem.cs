@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class ShopItem : MonoBehaviour
+public class SellItem : MonoBehaviour
 {
     [SerializeField] TMPro.TextMeshProUGUI ItemName;
     [SerializeField] TMPro.TextMeshProUGUI ItemPrice;
@@ -14,21 +14,18 @@ public class ShopItem : MonoBehaviour
     {
         _skin = skin;
         ItemName.text = _skin.PublicName;
-        ItemPrice.text = _skin.price.ToString();
+        ItemPrice.text = (_skin.price * .5).ToString();
         ItemIcon.sprite = _skin.icon;
     }
     public void OnClick()
     {
-        if (DataManager.GetGold() >= _skin.price)
-        {
-            DataManager.SubtractGold(_skin.price);
-            DataManager.AddItemToInventory(_skin.name);
+        DataManager.AddGold((int)(_skin.price * .5));
+        DataManager.RemoveItemFromInventory(_skin.name);
 
-            Debug.Log(_skin.name);
-            DataManager.SetSkinData(_skin.name, _skin.GetSkinType());
-            CharSpirteManager.Get().UpdateSkin();
+        Debug.Log(_skin.name);
+        DataManager.SetDefaultSkinData(_skin.GetSkinType());
+        CharSpirteManager.Get().UpdateSkin();
 
-            ShopPopup.Get().UpdateData();
-        }
+        ShopPopup.Get().UpdateData();
     }
 }

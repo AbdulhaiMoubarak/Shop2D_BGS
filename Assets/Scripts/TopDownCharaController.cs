@@ -71,6 +71,11 @@ public class TopDownCharaController : MonoBehaviour
             }
         }
 
+        if (Input.GetKey(KeyCode.I))
+        {
+            InventoryPopup.Get().Open();
+        }
+
         dir.Normalize();
         animator.SetBool("IsMoving", dir.magnitude > 0);
 

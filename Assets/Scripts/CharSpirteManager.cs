@@ -9,8 +9,6 @@ public class CharSpirteManager : MonoBehaviour
 
     [SerializeField] CharacterSprites character;
 
-    public List<SkinData> Skins;
-
     private static CharSpirteManager _instance;
 
     public static CharSpirteManager Get()
@@ -36,7 +34,7 @@ public class CharSpirteManager : MonoBehaviour
 
     void SetSkin(string SkinID)
     {
-        SkinData skin = Skins.Where(obj => obj.name == SkinID).SingleOrDefault();
+        SkinData skin = SkinManager.Get().GetSkinbyID(SkinID);
 
         if (skin == null) return;
 
