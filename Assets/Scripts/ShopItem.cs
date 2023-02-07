@@ -9,8 +9,8 @@ public class ShopItem : MonoBehaviour
     [SerializeField] TMPro.TextMeshProUGUI ItemPrice;
     [SerializeField] Image ItemIcon;
 
-    CharacterSkin _skin;
-    public void SetData(CharacterSkin skin)
+    SkinData _skin;
+    public void SetData(SkinData skin)
     {
         _skin = skin;
         ItemName.text = _skin.name;
@@ -19,7 +19,8 @@ public class ShopItem : MonoBehaviour
     }
     public void OnClick()
     {
-        DataManager.SetSkinData(_skin.SkinID, _skin.GetSkinType());
+        Debug.Log(_skin.name);
+        DataManager.SetSkinData(_skin.name, _skin.GetSkinType());
         CharSpirteManager.Get().UpdateSkin();
     }
 }

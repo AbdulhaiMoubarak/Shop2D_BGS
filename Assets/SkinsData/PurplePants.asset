@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name: PurplePants
+  m_EditorClassIdentifier: Assembly-CSharp::PantsSkinData
+  PublicName: Purple Pants
+  price: 300
+  icon: {fileID: -360699368, guid: 78a8d12294d610e478d58dd60846f0ff, type: 3}
+  Torso:
+    front: {fileID: -1283456651, guid: 78a8d12294d610e478d58dd60846f0ff, type: 3}
+    back: {fileID: 0}
+    side: {fileID: -1638336635, guid: 78a8d12294d610e478d58dd60846f0ff, type: 3}
+  UpperLeg: {fileID: 1617224569, guid: 78a8d12294d610e478d58dd60846f0ff, type: 3}
+  Leg: {fileID: 1901065992, guid: 78a8d12294d610e478d58dd60846f0ff, type: 3}

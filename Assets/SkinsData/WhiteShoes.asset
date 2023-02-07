@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name: WhiteShoes
+  m_EditorClassIdentifier: Assembly-CSharp::ShoesSkinData
+  PublicName: White Shoes
+  price: 0
+  icon: {fileID: -661249635, guid: 29bbb51b10657094d81490c8ec04b2ad, type: 3}
+  Shoe:
+    front: {fileID: -390883733, guid: 29bbb51b10657094d81490c8ec04b2ad, type: 3}
+    back: {fileID: -2119025122, guid: 29bbb51b10657094d81490c8ec04b2ad, type: 3}
+    side: {fileID: 1053096746, guid: 29bbb51b10657094d81490c8ec04b2ad, type: 3}

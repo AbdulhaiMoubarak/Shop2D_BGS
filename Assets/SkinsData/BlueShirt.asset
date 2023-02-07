@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name: BlueShirt
+  m_EditorClassIdentifier: Assembly-CSharp::TopSkinData
+  PublicName: Blue Shirt
+  price: 400
+  icon: {fileID: 589698630, guid: 78a8d12294d610e478d58dd60846f0ff, type: 3}
+  UpperTorso:
+    front: {fileID: 1329310776, guid: 78a8d12294d610e478d58dd60846f0ff, type: 3}
+    back: {fileID: -626703291, guid: 78a8d12294d610e478d58dd60846f0ff, type: 3}
+    side: {fileID: -1822616243, guid: 78a8d12294d610e478d58dd60846f0ff, type: 3}
+  UpperArm: {fileID: 697104855, guid: 78a8d12294d610e478d58dd60846f0ff, type: 3}
+  Arm: {fileID: 666871320, guid: 78a8d12294d610e478d58dd60846f0ff, type: 3}

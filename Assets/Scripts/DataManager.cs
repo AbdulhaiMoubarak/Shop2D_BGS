@@ -11,41 +11,33 @@ public class DataManager
     static string SHOES_SKIN_KEY = "SHOES_SKIN";
 
 
-    public static void SetSkinData(int skinID, SkinType type)
+    public static void SetSkinData(string skinID, SkinType type)
     {
         switch (type)
         {
             case SkinType.Top:
-                PlayerPrefs.SetInt(TOP_SKIN_KEY, skinID);
+                PlayerPrefs.SetString(TOP_SKIN_KEY, skinID);
                 break;
             case SkinType.Pants:
-                PlayerPrefs.SetInt(PANTS_SKIN_KEY, skinID);
+                PlayerPrefs.SetString(PANTS_SKIN_KEY, skinID);
                 break;
             case SkinType.Shoes:
-                PlayerPrefs.SetInt(SHOES_SKIN_KEY, skinID);
+                PlayerPrefs.SetString(SHOES_SKIN_KEY, skinID);
                 break;
         }
     }
 
-    public static int GetSkinData(SkinType type)
+    public static string GetSkinData(SkinType type)
     {
         switch (type)
         {
             case SkinType.Top:
-                return PlayerPrefs.GetInt(TOP_SKIN_KEY);
+                return PlayerPrefs.GetString(TOP_SKIN_KEY,"CyanTShirt");
             case SkinType.Pants:
-                return PlayerPrefs.GetInt(PANTS_SKIN_KEY);
+                return PlayerPrefs.GetString(PANTS_SKIN_KEY,"BrownPants");
             case SkinType.Shoes:
-                return PlayerPrefs.GetInt(SHOES_SKIN_KEY);
+                return PlayerPrefs.GetString(SHOES_SKIN_KEY,"WhiteShoes");
         }
-        return -1;
+        return null;
     }
-
-    public void CheckInvetory()
-    {
-
-    }
-
-
-
 }

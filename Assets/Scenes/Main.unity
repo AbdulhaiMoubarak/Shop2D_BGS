@@ -4698,6 +4698,55 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 1620603990, guid: 0db306a5e1a03034fa6311e96b44353c, type: 3}
+      propertyPath: Skins.Array.size
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1620603990, guid: 0db306a5e1a03034fa6311e96b44353c, type: 3}
+      propertyPath: Skins.Array.data[0]
+      value: 
+      objectReference: {fileID: 11400000, guid: 3e793bbee2f8c94409357353f533da78,
+        type: 2}
+    - target: {fileID: 1620603990, guid: 0db306a5e1a03034fa6311e96b44353c, type: 3}
+      propertyPath: Skins.Array.data[1]
+      value: 
+      objectReference: {fileID: 11400000, guid: d4866fdcd57cc5542b81611d541cd80f,
+        type: 2}
+    - target: {fileID: 1620603990, guid: 0db306a5e1a03034fa6311e96b44353c, type: 3}
+      propertyPath: Skins.Array.data[2]
+      value: 
+      objectReference: {fileID: 11400000, guid: 98fcbdbad162f0143af10e55b894882e,
+        type: 2}
+    - target: {fileID: 1620603990, guid: 0db306a5e1a03034fa6311e96b44353c, type: 3}
+      propertyPath: Skins.Array.data[3]
+      value: 
+      objectReference: {fileID: 11400000, guid: 5106c9bed42ed204f9485b53ea46a101,
+        type: 2}
+    - target: {fileID: 1620603990, guid: 0db306a5e1a03034fa6311e96b44353c, type: 3}
+      propertyPath: Skins.Array.data[4]
+      value: 
+      objectReference: {fileID: 11400000, guid: 0c572cd63b135db4a97671ae2f6ad818,
+        type: 2}
+    - target: {fileID: 1620603990, guid: 0db306a5e1a03034fa6311e96b44353c, type: 3}
+      propertyPath: Skins.Array.data[5]
+      value: 
+      objectReference: {fileID: 11400000, guid: 2295a2a357b3e1449b2d2b21c0d0ecc9,
+        type: 2}
+    - target: {fileID: 1620603990, guid: 0db306a5e1a03034fa6311e96b44353c, type: 3}
+      propertyPath: Skins.Array.data[6]
+      value: 
+      objectReference: {fileID: 11400000, guid: cdc50badad216f24eb9f20d0775c3c74,
+        type: 2}
+    - target: {fileID: 1620603990, guid: 0db306a5e1a03034fa6311e96b44353c, type: 3}
+      propertyPath: Skins.Array.data[7]
+      value: 
+      objectReference: {fileID: 11400000, guid: 7b10818803bfa1347845f73e3515e80c,
+        type: 2}
+    - target: {fileID: 1620603990, guid: 0db306a5e1a03034fa6311e96b44353c, type: 3}
+      propertyPath: Skins.Array.data[8]
+      value: 
+      objectReference: {fileID: 11400000, guid: 1447aeb432224bf45994bb7cb67dd9c9,
+        type: 2}
+    - target: {fileID: 1620603990, guid: 0db306a5e1a03034fa6311e96b44353c, type: 3}
       propertyPath: SkinsTop.Array.size
       value: 3
       objectReference: {fileID: 0}

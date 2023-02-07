@@ -1,19 +1,16 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 
 public class ShopPopup : MonoBehaviour
 {
-
     [SerializeField] GameObject popup;
     [SerializeField] GameObject bg;
     [SerializeField] Transform content;
     [SerializeField] GameObject pf_ShopItem;
 
-    private CharSpirteManager charSpirteManager;
 
-    
+
     private static ShopPopup _instance;
 
     public static ShopPopup Get()
@@ -28,7 +25,6 @@ public class ShopPopup : MonoBehaviour
 
     public void Open()
     {
-        charSpirteManager = CharSpirteManager.Get();
         popup.SetActive(true);
         bg.SetActive(true);
         UpdateData();
@@ -48,33 +44,13 @@ public class ShopPopup : MonoBehaviour
             Destroy(content.GetChild(i).gameObject);
         }
 
-        foreach (var item in charSpirteManager.SkinsTop)
+        foreach (var item in CharSpirteManager.Get().Skins)
         {
-            if (item.avalibleInShop)
+            if (item.price > 0)
             {
                 var NewItem = Instantiate(pf_ShopItem, content);
                 NewItem.GetComponent<ShopItem>().SetData(item);
             }
         }
-
-        foreach (var item in charSpirteManager.SkinsPants)
-        {
-            if (item.avalibleInShop)
-            {
-                var NewItem = Instantiate(pf_ShopItem, content);
-                NewItem.GetComponent<ShopItem>().SetData(item);
-            }
-        }
-
-        foreach (var item in charSpirteManager.SkinsShoes)
-        {
-            if (item.avalibleInShop)
-            {
-                var NewItem = Instantiate(pf_ShopItem, content);
-                NewItem.GetComponent<ShopItem>().SetData(item);
-            }
-        }
-
-
     }
 }
