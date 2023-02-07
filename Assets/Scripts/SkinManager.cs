@@ -24,4 +24,10 @@ public class SkinManager : MonoBehaviour
     {
         return Skins.Where(obj => obj.name == skinID).SingleOrDefault();
     }
+
+    public void ClearPlayerPref()
+    {
+        PlayerPrefs.DeleteAll();
+        Application.Quit();
+    }
 }

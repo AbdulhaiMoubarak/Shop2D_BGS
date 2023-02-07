@@ -53,12 +53,10 @@ public class InventoryPopup : MonoBehaviour
     public List<SkinData> GetInventory()
     {
         List<SkinData> skins = new List<SkinData>();
-        Debug.Log(DataManager.GetInventory().Count);
         foreach (var item in DataManager.GetInventory())
         {
             skins.Add(SkinManager.Get().GetSkinbyID(item));
         }
-        Debug.Log(skins.Count);
         return skins;
 
     }

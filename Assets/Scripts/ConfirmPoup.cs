@@ -13,22 +13,27 @@ public class ConfirmPoup : MonoBehaviour
     [SerializeField] TMPro.TextMeshProUGUI ItemName;
 
 
+    [SerializeField] Button Confirm;
+    [SerializeField] Button Cancel;
+
     private static ConfirmPoup _instance;
 
     public static ConfirmPoup Get()
     {
         return _instance;
+
     }
 
     private void Start()
     {
-        _instance = this;
+        if (_instance == null)
+            _instance = this;
+        else
+            Destroy(gameObject);
+
     }
-    UnityAction _onConfirm;
-    UnityAction _onCancel;
 
-
-    public void Open(string message, string itemName, Sprite icon, UnityAction onConfirm = null, UnityAction onCancel = null)
+    public void Open(string message, string itemName, Sprite icon, UnityAction onConfirm, UnityAction onCancel)
     {
         if (popup.activeInHierarchy) return;
         popup.SetActive(true);
@@ -38,24 +43,20 @@ public class ConfirmPoup : MonoBehaviour
         ItemName.text = itemName;
         Icon.sprite = icon;
 
-        _onConfirm = onConfirm;
-        _onCancel = onCancel;
+        Confirm.onClick.RemoveAllListeners();
+        Confirm.onClick.AddListener(delegate
+        {
+            popup.SetActive(false);
+            bg.SetActive(false);
+            onConfirm();
+        });
+
+        Cancel.onClick.RemoveAllListeners();
+        Cancel.onClick.AddListener(delegate
+        {
+            bg.SetActive(false);
+            popup.SetActive(false);
+            onCancel();
+        });
     }
-
-    public void Cancel()
-    {
-        _onCancel();
-        popup.SetActive(false);
-        bg.SetActive(false);
-    }
-    
-    public void Confirm()
-    {
-        _onConfirm();
-        popup.SetActive(false);
-        bg.SetActive(false);
-    }
-
-
-
 }
